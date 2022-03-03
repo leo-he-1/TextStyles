@@ -25,88 +25,105 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
+const App = () => (
+  <View style={styles.container}>
+    <Text style={styles.text1}>This is a text example </Text>
+    <Text style={styles.text2}>This is a text example </Text>
+    <Text style={styles.text3}>This is a text example </Text>
+    <Text style={styles.text4}>This is a text example </Text>
+    <Text style={styles.text5}>This is a text example </Text>
+    <Text style={styles.text6}>This is a text example </Text>
+    <Text style={styles.text7}>This is a text example </Text>
+    <Text style={styles.text8}>This is a text example </Text>
+    <Text style={styles.text9}>This is a text example </Text>
+    <Text style={styles.text10}>This is a text example </Text>
+  </View>
+);
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+    container:{
+        flex: 1,
+        padding: 10
+        },
+        text1: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20
+        },
+        text2: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            fontWeight: "bold"
+        },
+        text3: {
+            color: 'blue',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+
+        },
+        text4: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 30
+        },
+        text5: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            textAlign: "center"
+        },
+        text6: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            textDecorationLine: "underline"
+
+        },
+        text7: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            textDecorationLine: "line-through"
+        },
+        text8: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            textTransform: "uppercase"
+        },
+        text9: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            borderColor: "yellow",
+            borderWidth: 4
+        },
+        text10: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20,
+            backgroundColor: "green"
+        },
+        text: {
+            color: '#000',
+            marginTop: 10,
+            paddingVertical: 8,
+            fontSize: 20
+        },
+
+
+
 });
+
 
 export default App;
