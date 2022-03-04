@@ -27,16 +27,16 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 const App = () => (
   <View style={styles.container}>
-    <Text style={styles.text1}>This is a text example </Text>
-    <Text style={styles.text2}>This is a text example </Text>
-    <Text style={styles.text3}>This is a text example </Text>
-    <Text style={styles.text4}>This is a text example </Text>
-    <Text style={styles.text5}>This is a text example </Text>
-    <Text style={styles.text6}>This is a text example </Text>
-    <Text style={styles.text7}>This is a text example </Text>
-    <Text style={styles.text8}>This is a text example </Text>
-    <Text style={styles.text9}>This is a text example </Text>
-    <Text style={styles.text10}>This is a text example </Text>
+    <Text style={styles.text1}>This is text example </Text>
+    <Text style={styles.text2}>This is text example </Text>
+    <Text style={styles.text3}>This is text example </Text>
+    <Text style={styles.text4}>This is text example </Text>
+    <Text style={styles.text5}>This is text example </Text>
+    <Text style={styles.text6}>This is text example </Text>
+    <Text style={styles.text7}>This is text example </Text>
+    <Text style={styles.text8}>This is text example </Text>
+    <Text style={styles.text9}>This is text example </Text>
+    <Text style={styles.text10}>This is text example </Text>
   </View>
 );
 const styles = StyleSheet.create({
@@ -45,79 +45,82 @@ const styles = StyleSheet.create({
         padding: 10
         },
         text1: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            color: 'lime',
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20
         },
         text2: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
-            fontSize: 20,
-            fontWeight: "bold"
+            color: 'lime',
+            marginTop: 5,
+            paddingVertical: 6,
+            fontSize: 30,
         },
         text3: {
-            color: 'blue',
-            marginTop: 10,
-            paddingVertical: 8,
+            color: 'black',
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
+            fontWeight: "bold"
 
         },
         text4: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
-            fontSize: 30
+            color: 'black',
+            marginTop: 5,
+            paddingVertical: 6,
+            fontSize: 20,
+            fontStyle: 'italic'
         },
         text5: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            color: 'black',
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
-            textAlign: "center"
+            textDecorationLine: "underline"
         },
         text6: {
             color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
-            textDecorationLine: "underline"
-
         },
         text7: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            color: 'lime',
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
-            textDecorationLine: "line-through"
+            fontWeight: "bold",
+            fontStyle: 'italic'
+
         },
         text8: {
             color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
-            textTransform: "uppercase"
+            marginLeft: 25
         },
         text9: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            color: 'black',
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
-            borderColor: "yellow",
-            borderWidth: 4
+            marginRight: 200,
+            backgroundColor: "yellow"
         },
         text10: {
-            color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            color: 'lime',
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20,
-            backgroundColor: "green"
+            marginRight: 200,
+            backgroundColor: 'rgba(00, 255, 0, 0.2)'
+
         },
         text: {
             color: '#000',
-            marginTop: 10,
-            paddingVertical: 8,
+            marginTop: 5,
+            paddingVertical: 6,
             fontSize: 20
         },
 
